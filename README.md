@@ -8,5 +8,5 @@ git clone https://github.com/xiaomi-pad-8-pro-development/local_manifests \
 repo sync
 ```
 
-`hardware/xiaomi` comes from the ROM's own manifest. Remove the
-`android_device_xiaomi_piano-alxp-parts` line to build without ALXP Features.
+`hardware/xiaomi` comes from the ROM's own manifest. Parts, camera, Notes,
+patches and ALXP Features are optional: remove their lines to leave them out.

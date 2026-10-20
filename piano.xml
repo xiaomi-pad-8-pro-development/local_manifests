@@ -12,6 +12,9 @@
   <project name="android_vendor_xiaomi_piano-xiaomi-camera" path="vendor/xiaomi/piano-xiaomi-camera" remote="piano" />
   <project name="android_vendor_xiaomi_piano-xiaomi-notes" path="vendor/xiaomi/piano-xiaomi-notes" remote="piano" />
 
+  <!-- Optional: ROM source patches (stylus laser, keyboard cover, Settings). -->
+  <project name="android_device_xiaomi_piano-patches" path="device/xiaomi/piano-patches" remote="piano" />
+
   <!-- Optional: ALXP Features (AirPods, iPhone notifications, Mac). -->
   <project name="android_device_xiaomi_piano-alxp-parts" path="device/xiaomi/piano-alxp-parts" remote="piano" />
 </manifest>
