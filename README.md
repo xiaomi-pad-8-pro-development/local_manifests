@@ -3,7 +3,7 @@
 Adds the Xiaomi Pad 8 Pro trees to an Android 17 ROM checkout.
 
 `piano.xml` has the trees every build needs: the device, common and kernel
-trees and the vendor blobs. Each optional part has its own file in
+trees, the vendor blobs and LineageOS `hardware/xiaomi`. Each optional part has its own file in
 `optional/`; copy the ones you want next to `piano.xml`:
 
 | File | What it adds |
@@ -23,4 +23,4 @@ repo sync
 
 `repo` reads only the top level of `.repo/local_manifests`, so files left in
 `optional/` are ignored. The device tree includes each optional part only
-when it is synced. `hardware/xiaomi` comes from the ROM's own manifest.
+when it is synced.

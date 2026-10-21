@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Xiaomi Pad 8 Pro (piano), Android 17: the trees every build needs. -->
 <manifest>
+  <remote name="lineage" fetch="https://github.com/LineageOS" revision="lineage-24.0" />
   <remote name="piano" fetch="https://github.com/xiaomi-pad-8-pro-development" revision="seventeen" />
 
   <project name="android_device_xiaomi_piano" path="device/xiaomi/piano" remote="piano" />
@@ -8,4 +9,5 @@
   <project name="android_device_xiaomi_piano-kernel" path="device/xiaomi/piano-kernel" remote="piano" />
   <project name="android_vendor_xiaomi_piano" path="vendor/xiaomi/piano" remote="piano" />
   <project name="android_vendor_xiaomi_sm8750-common" path="vendor/xiaomi/sm8750-common" remote="piano" />
+  <project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="lineage" />
 </manifest>
