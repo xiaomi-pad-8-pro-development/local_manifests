@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Xiaomi Pad 8 Pro (piano), Android 17 -->
+<!-- Xiaomi Pad 8 Pro (piano), Android 17: the trees every build needs. -->
 <manifest>
   <remote name="piano" fetch="https://github.com/xiaomi-pad-8-pro-development" revision="seventeen" />
 
   <project name="android_device_xiaomi_piano" path="device/xiaomi/piano" remote="piano" />
   <project name="android_device_xiaomi_sm8750-common" path="device/xiaomi/sm8750-common" remote="piano" />
   <project name="android_device_xiaomi_piano-kernel" path="device/xiaomi/piano-kernel" remote="piano" />
-  <project name="android_device_xiaomi_piano-xiaomi-parts" path="device/xiaomi/piano-xiaomi-parts" remote="piano" />
   <project name="android_vendor_xiaomi_piano" path="vendor/xiaomi/piano" remote="piano" />
   <project name="android_vendor_xiaomi_sm8750-common" path="vendor/xiaomi/sm8750-common" remote="piano" />
-  <project name="android_vendor_xiaomi_piano-xiaomi-camera" path="vendor/xiaomi/piano-xiaomi-camera" remote="piano" />
-  <project name="android_vendor_xiaomi_piano-xiaomi-notes" path="vendor/xiaomi/piano-xiaomi-notes" remote="piano" />
-
-  <!-- Optional: ROM source patches (stylus laser, keyboard cover, Settings). -->
-  <project name="android_device_xiaomi_piano-patches" path="device/xiaomi/piano-patches" remote="piano" />
-
-  <!-- Optional: ALXP Features (AirPods, iPhone notifications, Mac). -->
-  <project name="android_device_xiaomi_piano-alxp-parts" path="device/xiaomi/piano-alxp-parts" remote="piano" />
 </manifest>

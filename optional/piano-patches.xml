@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Optional, needs piano.xml: ROM source patches: stylus laser, keyboard cover, Settings. -->
+<manifest>
+  <project name="android_device_xiaomi_piano-patches" path="device/xiaomi/piano-patches" remote="piano" />
+</manifest>

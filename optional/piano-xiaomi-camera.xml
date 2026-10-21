@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Optional, needs piano.xml: Xiaomi camera. -->
+<manifest>
+  <project name="android_vendor_xiaomi_piano-xiaomi-camera" path="vendor/xiaomi/piano-xiaomi-camera" remote="piano" />
+</manifest>

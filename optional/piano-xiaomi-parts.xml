@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Optional, needs piano.xml: Xiaomi Parts: pen, keyboard cover and display settings. -->
+<manifest>
+  <project name="android_device_xiaomi_piano-xiaomi-parts" path="device/xiaomi/piano-xiaomi-parts" remote="piano" />
+</manifest>

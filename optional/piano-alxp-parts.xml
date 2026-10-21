@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Optional, needs piano.xml: ALXP Features: AirPods switching, iPhone notifications, Mac link. -->
+<manifest>
+  <project name="android_device_xiaomi_piano-alxp-parts" path="device/xiaomi/piano-alxp-parts" remote="piano" />
+</manifest>
