@@ -2,7 +2,7 @@
 
 Adds the Xiaomi Pad 8 Pro trees to an Android 17 ROM checkout.
 
-`piano.xml` has the trees every build needs: the device, common and kernel
+`piano.xml` has the trees every build needs: the device and kernel
 trees, the vendor blobs and LineageOS `hardware/xiaomi`. Each optional part has its own file in
 `optional/`; copy the ones you want next to `piano.xml`:
 
