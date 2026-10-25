@@ -12,6 +12,7 @@ trees, the vendor blobs and LineageOS `hardware/xiaomi`. Each optional part has 
 | `optional/piano-alxp-parts.xml` | ALXP Features: AirPods switching, iPhone notifications, Mac link |
 | `optional/piano-xiaomi-camera.xml` | Xiaomi camera |
 | `optional/piano-xiaomi-notes.xml` | Xiaomi Notes |
+| `optional/piano-aosp-notes.xml` | Clean-room AOSP Notes app |
 | `optional/piano-patches.xml` | ROM source patches: stylus laser, keyboard cover, Settings |
 
 ```
@@ -23,4 +24,5 @@ repo sync
 
 `repo` reads only the top level of `.repo/local_manifests`, so files left in
 `optional/` are ignored. The device tree includes each optional part only
-when it is synced.
+when it is synced. AOSP Notes also needs the optional include line from
+`integration/device.mk.patch` in the piano device tree before Soong builds it.
