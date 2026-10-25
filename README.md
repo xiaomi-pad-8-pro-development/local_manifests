@@ -19,6 +19,7 @@ trees, the vendor blobs and LineageOS `hardware/xiaomi`. Each optional part has 
 git clone https://github.com/xiaomi-pad-8-pro-development/local_manifests \
     -b seventeen .repo/local_manifests
 cp .repo/local_manifests/optional/piano-xiaomi-parts.xml .repo/local_manifests/
+cp .repo/local_manifests/optional/piano-aosp-notes.xml .repo/local_manifests/
 repo sync
 ```
 
