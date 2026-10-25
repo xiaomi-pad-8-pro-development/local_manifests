@@ -24,5 +24,5 @@ repo sync
 
 `repo` reads only the top level of `.repo/local_manifests`, so files left in
 `optional/` are ignored. The device tree includes each optional part only
-when it is synced. AOSP Notes also needs the optional include line from
-`integration/device.mk.patch` in the piano device tree before Soong builds it.
+when it is synced. The piano `seventeen` device tree includes AOSP Notes in
+the same way.
