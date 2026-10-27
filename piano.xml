@@ -8,4 +8,7 @@
   <project name="android_device_xiaomi_piano-kernel" path="device/xiaomi/piano-kernel" remote="piano" />
   <project name="android_vendor_xiaomi_piano" path="vendor/xiaomi/piano" remote="piano" />
   <project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="lineage" />
+
+  <remove-project name="LineageOS/android_hardware_qcom_thermal" path="hardware/qcom-caf/thermal" />
+  <project name="android_hardware_qcom_thermal" path="hardware/qcom-caf/thermal" remote="piano" groups="qcom" />
 </manifest>
