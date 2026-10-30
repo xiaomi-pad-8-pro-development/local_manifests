@@ -1,31 +1,22 @@
 # Local manifests for the Xiaomi Pad 8 Pro (piano)
 
-Adds the Xiaomi Pad 8 Pro trees to an Android 17 ROM checkout.
-
-`piano.xml` has the trees every build needs: the device and kernel
-trees, the vendor blobs, LineageOS `hardware/xiaomi` and the piano
-thermal HAL fork, which adds a skin temperature estimate. Each optional
-part has its own file in `optional/`; copy the ones you want next to
-`piano.xml`:
-
-| File | What it adds |
+| | |
 | --- | --- |
-| `optional/piano-xiaomi-parts.xml` | Xiaomi Parts: pen, keyboard cover and display settings |
-| `optional/piano-alxp-parts.xml` | ALXP Features: AirPods switching, iPhone notifications, Mac link |
-| `optional/piano-xiaomi-camera.xml` | Xiaomi camera |
-| `optional/piano-xiaomi-notes.xml` | Xiaomi Notes |
-| `optional/piano-aosp-notes.xml` | Clean-room AOSP Notes app |
-| `optional/piano-patches.xml` | ROM source patches: stylus laser, keyboard cover, Settings |
+| Path | `.repo/local_manifests` |
+| Android | 17 |
 
 ```
-git clone https://github.com/xiaomi-pad-8-pro-development/local_manifests \
-    -b seventeen .repo/local_manifests
-cp .repo/local_manifests/optional/piano-xiaomi-parts.xml .repo/local_manifests/
-cp .repo/local_manifests/optional/piano-aosp-notes.xml .repo/local_manifests/
+git clone https://github.com/xiaomi-pad-8-pro-development/local_manifests -b seventeen .repo/local_manifests
 repo sync
 ```
 
-`repo` reads only the top level of `.repo/local_manifests`, so files left in
-`optional/` are ignored. The device tree includes each optional part only
-when it is synced. The piano `seventeen` device tree includes AOSP Notes in
-the same way.
+`piano.xml` has the required trees. For extras, copy files from `optional/` next to it:
+
+| File | Adds |
+| --- | --- |
+| `piano-xiaomi-parts.xml` | Pen, keyboard, display |
+| `piano-alxp-parts.xml` | AirPods, iPhone, Mac |
+| `piano-xiaomi-camera.xml` | Xiaomi camera |
+| `piano-xiaomi-notes.xml` | Xiaomi Notes |
+| `piano-aosp-notes.xml` | AOSP Notes |
+| `piano-patches.xml` | ROM patches |
